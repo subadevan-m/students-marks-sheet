@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Marks Report</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#1e1e2f,#2c3e50);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+color:white;
+}
+
+.container{
+width:95%;
+max-width:1000px;
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+color:#00f5d4;
+letter-spacing:1px;
+}
+
+/* Table Styling */
+table{
+width:100%;
+border-collapse:collapse;
+overflow:hidden;
+border-radius:15px;
+}
+
+thead{
+background:#00f5d4;
+color:black;
+}
+
+th, td{
+padding:15px;
+text-align:center;
+}
+
+th{
+font-weight:600;
+}
+
+tbody tr{
+background:rgba(255,255,255,0.07);
+transition:0.3s ease;
+}
+
+tbody tr:hover{
+background:rgba(0,245,212,0.15);
+transform:scale(1.01);
+}
+
+/* Grade Colors */
+.grade-A{color:#00ff99;font-weight:600;}
+.grade-B{color:#00ccff;font-weight:600;}
+.grade-C{color:#ffcc00;font-weight:600;}
+.grade-D{color:#ff6b6b;font-weight:600;}
+
+@media(max-width:768px){
+th,td{
+padding:10px;
+font-size:14px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>📊 Student Marks Report</h2>
+
+<table>
+<thead>
+<tr>
+<th>Roll No</th>
+<th>Name</th>
+<th>Maths</th>
+<th>Science</th>
+<th>English</th>
+<th>Total</th>
+<th>Grade</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>101</td>
+<td>Arun</td>
+<td>95</td>
+<td>92</td>
+<td>90</td>
+<td>277</td>
+<td class="grade-A">A</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Divya</td>
+<td>88</td>
+<td>84</td>
+<td>79</td>
+<td>251</td>
+<td class="grade-B">B</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Karthik</td>
+<td>72</td>
+<td>75</td>
+<td>70</td>
+<td>217</td>
+<td class="grade-C">C</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>Sneha</td>
+<td>60</td>
+<td>58</td>
+<td>65</td>
+<td>183</td>
+<td class="grade-D">D</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>
